@@ -40,7 +40,7 @@ function back(){
 	var tt=0;
 	for(var i=0; i<4; ++i)tt+=used[i];
 	if(tt<4)document.querySelector('#original').innerHTML=ori;
-	else document.querySelector('#original').innerHTML=ori+'<h1 align="center">好啦！我知道這才是你啦！</h1><div class="same-line"><div class="image-center"><img src="janette.jpg" onclick="pic(4)"></div></div><h2 align="center" id="t1"></h2>';
+	else document.querySelector('#original').innerHTML=ori+'<h2 align="center">好啦！我知道這才是你啦！</h2><div class="same-line"><div class="image-center"><img src="janette.jpg" onclick="pic(4)"></div></div><h3 align="center" id="t1"></h3>';
 }
 
 var mkcnt=0, realj=0;
