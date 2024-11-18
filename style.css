@@ -10,10 +10,25 @@
 	position: relative;
 }
 
+.image-small {
+	width: 1vw;
+	height: 1.618vw;
+	overflow: hidden;
+	position: relative;
+}
+
 .image-center img {
 	position: absolute;
 	width: 100%; /* 自動寬度 */
 	height: 100%; /* 填滿高度 */
+	object-fit: cover; /* 保持比例，裁切超出部分 */
+	object-position: center top; /* 調整顯示的位置（例如置中或對齊上方） */
+}
+
+.image-small img {
+	position: absolute;
+	width: 100%; /* 自動寬度 */
+	height: auto; /* 填滿高度 */
 	object-fit: cover; /* 保持比例，裁切超出部分 */
 	object-position: center top; /* 調整顯示的位置（例如置中或對齊上方） */
 }
