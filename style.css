@@ -4,8 +4,8 @@
 }
 
 .image-center, .image-left {
-	width: 200px; /* 設定容器的寬度 */
-	height: 200px; /* 設定容器的高度 */
+	width: 20vh; /* 設定容器的寬度 */
+	height: 20vh; /* 設定容器的高度 */
 	overflow: hidden; /* 隱藏超出範圍的部分 */
 	position: relative;
 }

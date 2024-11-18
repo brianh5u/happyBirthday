@@ -19,10 +19,10 @@ function pic(a){
 			s='';
 			var cnt=0;
 			for(var i=0; i<art.length; ++i){
-				if(i%100==0)s+='<div class="same-line">';
+				if(i%80==0)s+='<div class="same-line">';
 				if(art[i]=='#')s+='<div class="image-small"><img src="cookie.JPG"></div>', ++cnt;
-				if(art[i]=='.')s+='<div class="image-small"><img></div>';
-				if(i%100==99)s+='</div>';
+				else s+='<div class="image-small"><img></div>';
+				if(i%80==79)s+='</div>';
 			}
 			document.querySelector('#original').innerHTML='<h1 align="center">生日快樂！！！</h1><p align="center">恭喜過關！既然你是華方綾，我準備了'+String(cnt)+'包營養口糧當生日禮物</p>'+s;
 			return;

@@ -9,10 +9,10 @@ from art import *
 a="Happy Birthday to Janette".split(' ')
 b=[text2art(i, font="cli8x8").replace(' ', '.') for i in a]
 c=[len(i.split('\n')[0]) for i in b]
-mx=100
+mx=80
 res=''
-print('.'*100)
-res+='.'*100
+print('.'*mx)
+res+='.'*mx
 for i in range(len(a)):
 	for j in b[i].split('\n'):
 		l='.'*((mx-len(j)+1)//2)
