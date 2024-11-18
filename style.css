@@ -1,0 +1,27 @@
+.same-line{
+	display: flex;
+	justify-content: center;
+}
+
+.image-center, .image-left {
+	width: 200px; /* 設定容器的寬度 */
+	height: 200px; /* 設定容器的高度 */
+	overflow: hidden; /* 隱藏超出範圍的部分 */
+	position: relative;
+}
+
+.image-center img {
+	position: absolute;
+	width: 100%; /* 自動寬度 */
+	height: 100%; /* 填滿高度 */
+	object-fit: cover; /* 保持比例，裁切超出部分 */
+	object-position: center top; /* 調整顯示的位置（例如置中或對齊上方） */
+}
+
+.image-left img {
+	position: absolute;
+	width: auto; /* 自動寬度 */
+	height: 100%; /* 填滿高度 */
+	object-fit: cover; /* 保持比例，裁切超出部分 */
+	object-position: center top; /* 調整顯示的位置（例如置中或對齊上方） */
+}
